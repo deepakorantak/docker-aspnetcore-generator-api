@@ -1,0 +1,11 @@
+**\bin\
+**\obj\
+**\.vs\
+infra\
+**\.dockerignore*
+**\Dockerfile*
+**\docker-compose*.yml
+**\.git\
+**\global.json
+**\*.user
+

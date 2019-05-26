@@ -1,0 +1,23 @@
+docker exec -it -u containeradministrator <container id of the server> cmd
+
+icacls "C:\Teamcity" /grant Users:F
+icacls "C:\ProgramData\JetBrains\TeamCity" /grant Users:F
+
+exit
+------------------------------------------------------------------------------------
+docker exec -it -u containeradministrator <container id of the agent> cmd
+
+icacls "C:\BuildAgent\conf" /grant Users:F
+Create buildAgent.properties and add serverUrl=http://<servicename or ip adderss of the server>:8111/
+
+---------------------------------------------------------------------------------------
+
+
+restart the server by docker-composer down and then docker-compose up -d
+* the above permissions are persisted even if the cotainer is recreated since we have use managed volumes.
+Manages volumes will not be destroyed with docker-compose down
+
+
+
+TeamcityAdmin Account
+admin/Pass@2410

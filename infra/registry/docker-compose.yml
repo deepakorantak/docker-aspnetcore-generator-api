@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  my-registry:
+    image: stefanscherer/registry-windows
+    volumes:
+      - reg:C:\registry
+    ports:
+      - "55000:5000"
+  
+volumes:
+  reg:
