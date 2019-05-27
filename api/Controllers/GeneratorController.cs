@@ -16,7 +16,7 @@ namespace api.Controllers
     public class GenerateController : Controller
     {
         public const string MAIL_HOST = "mail";
-        public const int MAIL_PORT = 4080;
+        public const int MAIL_PORT = 25;
 
         [HttpPost]
         public async Task EmailRandomNames(Range range, string email = "test@fake.com")
