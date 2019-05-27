@@ -2,6 +2,7 @@
 **\obj\
 **\.vs\
 infra\
+integration\
 **\.dockerignore*
 **\Dockerfile*
 **\docker-compose*.yml
