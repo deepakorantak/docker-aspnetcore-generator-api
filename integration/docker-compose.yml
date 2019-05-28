@@ -2,7 +2,7 @@ version : '3.7'
 
 services:
   generator:
-    image: deepakorantak/generator-api:9
+    image: deepakorantak/generator-api:${BUILD_NUMBER-9}
     ports: 
       - "8080:80"
 
@@ -13,7 +13,8 @@ services:
       - "1025:25"
   
   integration:
-    image: deepakorantak/gen-api-itest:9
+    image: deepakorantak/gen-api-itest:${BUILD_NUMBER-9}
     build: .
+    
 
       
