@@ -13,7 +13,6 @@ services:
       - "1025:25"
   
   integration:
-    build: .
     image: deepakorantak/gen-api-itest:${BUILD_NUMBER-9}
     
     
