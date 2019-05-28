@@ -12,7 +12,7 @@ namespace integration
     public class EmailTests
     {
         public const string GeneratorApiRoot = "http://generator";
-        public const string MailHogApiV2Root = "http://mail:4080/api/v2";
+        public const string MailHogApiV2Root = "http://mail:80/api/v2";
 
         [Fact]
         public async Task SendEmailWithNames_IsFromGenerator()
